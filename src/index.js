@@ -65,6 +65,10 @@ function App() {
           Click <ScrollLink number={0}>here</ScrollLink> to go back to the top, or <a href="https://github.com/tobyck">here</a> to see some more projects.
         </p>
       </Section>
+
+      <div className="indicator">
+        0%
+      </div>
     </div >
   );
 }
@@ -76,6 +80,8 @@ document.addEventListener("scroll", () => {
   const arrow = document.querySelector("#arrow").style;
   arrow.animation = window.scrollY ? "none" : "bounce 2s infinite";
   arrow.opacity = +!window.scrollY;
+
+  document.querySelector(".indicator").innerText = parseInt(window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100) + "%";
 });
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
