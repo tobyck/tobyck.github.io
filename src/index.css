@@ -90,8 +90,8 @@ img {
 
 .indicator {
   position: fixed;
-  bottom: 5%;
-  right: 2.5%;
+  bottom: 3vh;
+  right: 3vh;
   background-color: #ffd152;
   padding: 20px;
   width: 70px;
@@ -109,15 +109,15 @@ img {
     width: 75vw;
     font-size: 25px;
   }
+
+  .indicator {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 700px) {
   .title {
     font-size: 10vh;
-  }
-
-  img {
-    scale: 3;
   }
 
   .section:not(:first-child) h1 {
@@ -128,5 +128,9 @@ img {
   .section p {
     width: 75vw;
     font-size: 17px;
+  }
+
+  img {
+    display: none;
   }
 }
