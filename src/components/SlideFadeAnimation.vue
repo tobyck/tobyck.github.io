@@ -9,7 +9,9 @@ defineProps({
 
 <template>
 	<Transition name="slide-fade" appear class="transition">
-		<slot></slot>
+		<div>
+			<slot></slot>
+		</div>
 	</Transition>
 </template>
 

@@ -37,20 +37,24 @@ import ExternalLinks from "@/components/ExternalLinks.vue"
 	--scale: 1;
 	--title-scale: 1;
 	--height: 90vh;
+	--gap: 30pt;
 }
 
-@media (max-width: 1200px) {
+/* ipads/tablets */
+@media screen and (max-width: 1300px) {
 	:root {
 		--scale: 0.83;
 	}
 }
 
-@media (max-width: 700px) {
+/* phones (except if it's landscape it just completely breaks and i don't care) */
+@media screen and (max-width: 800px) {
 	:root {
 		--bio-width: 85vw;
-		--scale: 0.65;
-		--title-scale: 0.75;
-		--height: 80vh;
+		--scale: 0.8;
+		--title-scale: 0.7;
+		--height: 85vh;
+		--gap: 15pt;
 	}
 }
 
@@ -69,7 +73,7 @@ main {
 	flex-flow: column;
 	align-items: center;
 	justify-content: center;
-	gap: calc(var(--scale) * 30pt);
+	gap: calc(var(--scale) * var(--gap));
 }
 
 a {

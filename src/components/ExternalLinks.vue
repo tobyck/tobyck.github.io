@@ -10,7 +10,7 @@
 div {
 	display: flex;
 	flex-flow: row;
-	gap: 22px;
+	gap: calc(var(--scale) * 30px);
 	margin-top: 20pt;
 }
 
