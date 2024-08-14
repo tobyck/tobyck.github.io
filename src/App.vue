@@ -1,5 +1,6 @@
 <script setup>
 import SlideFadeAnimation from "@/components/SlideFadeAnimation.vue"
+import DynamicTilt from "@/components/DynamicTilt.vue"
 import WelcomeTitle from "@/components/WelcomeTitle.vue"
 import MihiSection from "@/components/MihiSection.vue"
 import BioSection from "@/components/BioSection.vue"
@@ -8,7 +9,11 @@ import ExternalLinks from "@/components/ExternalLinks.vue"
 
 <template>
 	<header>
-		<SlideFadeAnimation :delay=".1"><WelcomeTitle/></SlideFadeAnimation>
+		<SlideFadeAnimation :delay=".1">
+			<DynamicTilt>
+				<WelcomeTitle/>
+			</DynamicTilt>
+		</SlideFadeAnimation>
 	</header>
 	<main>
 		<SlideFadeAnimation :delay=".2"><MihiSection/></SlideFadeAnimation>

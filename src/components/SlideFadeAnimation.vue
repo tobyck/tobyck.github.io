@@ -16,7 +16,7 @@ defineProps({
 <style scoped>
 .slide-fade-leave-active,
 .slide-fade-enter-active {
-  transition: all .8s ease;
+  transition: transform .8s ease, opacity .8s ease;
 }
 
 .slide-fade-enter-from,
