@@ -35,11 +35,12 @@ import ExternalLinks from "@/components/ExternalLinks.vue"
 	--main-font: "IBM Plex Sans";
 	--bio-width: 620px;
 	--scale: 1;
+	--height: 90vh;
 }
 
 @media (max-width: 1200px) {
 	:root {
-		--scale: 0.85;
+		--scale: 0.83;
 	}
 }
 
@@ -47,6 +48,7 @@ import ExternalLinks from "@/components/ExternalLinks.vue"
 	:root {
 		--bio-width: 85vw;
 		--scale: 0.65;
+		--height: 80vh;
 	}
 }
 
@@ -57,7 +59,7 @@ body {
 	flex-flow: column;
 	align-items: center;
 	justify-content: center;
-	height: 90vh;
+	height: var(--height);
 }
 
 main {
