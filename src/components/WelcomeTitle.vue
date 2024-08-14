@@ -5,7 +5,7 @@
 <style scoped>
 h1 {
 	font-family: var(--title-font);
-	font-size: 48pt;
+	font-size: calc(var(--title-scale) * 48pt);
 	text-align: center;
 	color: var(--color1);
 }

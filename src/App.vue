@@ -33,8 +33,9 @@ import ExternalLinks from "@/components/ExternalLinks.vue"
 	--title-font: "Bebas Neue";
 	--mihi-font: "IBM Plex Mono";
 	--main-font: "IBM Plex Sans";
-	--bio-width: 620px;
+	--bio-width: 660px;
 	--scale: 1;
+	--title-scale: 1;
 	--height: 90vh;
 }
 
@@ -48,6 +49,7 @@ import ExternalLinks from "@/components/ExternalLinks.vue"
 	:root {
 		--bio-width: 85vw;
 		--scale: 0.65;
+		--title-scale: 0.75;
 		--height: 80vh;
 	}
 }
