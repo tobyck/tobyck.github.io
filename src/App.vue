@@ -10,7 +10,7 @@ import ExternalLinks from "@/components/ExternalLinks.vue"
 <template>
 	<header>
 		<SlideFadeAnimation :delay=".1">
-			<DynamicTilt>
+			<DynamicTilt :activation-delay="100">
 				<WelcomeTitle/>
 			</DynamicTilt>
 		</SlideFadeAnimation>
@@ -33,6 +33,21 @@ import ExternalLinks from "@/components/ExternalLinks.vue"
 	--title-font: "Bebas Neue";
 	--mihi-font: "IBM Plex Mono";
 	--main-font: "IBM Plex Sans";
+	--bio-width: 620px;
+	--scale: 1;
+}
+
+@media (max-width: 1200px) {
+	:root {
+		--scale: 0.85;
+	}
+}
+
+@media (max-width: 700px) {
+	:root {
+		--bio-width: 85vw;
+		--scale: 0.65;
+	}
 }
 
 body {
@@ -50,7 +65,7 @@ main {
 	flex-flow: column;
 	align-items: center;
 	justify-content: center;
-	gap: 30pt;
+	gap: calc(var(--scale) * 30pt);
 }
 
 a {

@@ -11,7 +11,7 @@
 div {
 	font-family: var(--mihi-font);
 	color: var(--sub-text);
-	font-size: 11pt;
+	font-size: calc(var(--scale) * 11pt);
 	text-align: center;
 	line-height: 130%;
 }

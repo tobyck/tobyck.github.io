@@ -8,8 +8,8 @@
 div {
 	color: var(--main-text);
 	font-family: var(--main-font);
-	font-size: 14pt;
-	width: 620px;
+	font-size: calc(var(--scale) * 14pt);
+	width: var(--bio-width);
 	text-align: left;
 }
 </style>
